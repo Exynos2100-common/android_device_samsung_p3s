@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2021 The aosp Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,19 +23,28 @@ $(call inherit-product, device/samsung/p3s/device.mk)
 ## Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1440
 
-## Inherit some common Pixel Experience stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+## Inherit some common aosp stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Project-Elixir
+IS_PHONE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_BUILD_APERTURE_CAMERA := true
+FORCE_LAWNCHAIR := true
+ELIXIR_BUILD_TYPE := UNOFFICIAL
+BUILD_USERNAME := FrEeRuNnEr4EvEr
+BUILD_HOSTNAME := Elixir
+TARGET_INCLUDE_STOCK_ACORE := false
+EXTRA_UDFPS_ANIMATIONS := true
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Matrixx
-MATRIXX_CHIPSET := exynos2100
-MATRIXX_BATTERY := 5000mAh
-MATRIXX_DISPLAY := 1440x3200
-
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := lineage_p3s
+PRODUCT_NAME := aosp_p3s
 PRODUCT_DEVICE := p3s
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G998B

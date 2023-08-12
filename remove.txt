@@ -1,0 +1,5 @@
+device/samsung
+vendor/samsung
+hardware/samsung
+kernel/samsung
+hardware/samsung_slsi-linaro
