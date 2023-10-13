@@ -33,6 +33,15 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Path to current tree
 DEVICE_PATH := device/samsung/p3s
 
+# Kernel
+TARGET_KERNEL_DIR ?= device/samsung/p3s-kernel
+LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
+
+PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
+
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS += device/samsung/p3s-kernel/kernel-headers
+
 # Recovery/vendor_boot firmware
 PRODUCT_COPY_FILES += \
     vendor/samsung/p3s/proprietary/vendor/firmware/y792_p3.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/y792_p3.bin \

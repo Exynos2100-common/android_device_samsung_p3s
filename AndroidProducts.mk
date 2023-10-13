@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_p3s.mk
+    $(LOCAL_DIR)/statix_p3s.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_p3s-eng \
-    lineage_p3s-user \
-    lineage_p3s-userdebug
+    statix_p3s-eng \
+    statix_p3s-user \
+    statix_p3s-userdebug
