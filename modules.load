@@ -12,6 +12,7 @@ exynos-adv-tracer-s2d.ko
 ehld.ko
 exynos-debug-test.ko
 hardlockup-debug.ko
+sec_debug_sched_report.ko
 exynos_acpm.ko
 exynos_pm_qos.ko
 exynos-s2mpu.ko
@@ -269,4 +270,6 @@ snd-soc-samsung-abox.ko
 snd-soc-samsung-vts-mailbox.ko
 snd-soc-samsung-vts.ko
 unbound_prince.ko
+tcp_westwood.ko
+tcp_htcp.ko
 input_booster_lkm.ko
