@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022 The BananaOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,23 +24,17 @@ $(call inherit-product, device/samsung/p3s/device.mk)
 ## Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1440
 
-## Inherit some common Pixel Experience stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+## Inherit some common Banana stuff
+$(call inherit-product, vendor/banana/config/common.mk)
+BANANA_MAINTAINER := FrEeRuNnEr4EvEr
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
+BUILD_CORE_GAPPS := true
+BUILD_CORE_GAPPS_EXTRA := true
 
 ## Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
-# Pixel Experience Flags
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
-TARGET_SUPPORTS_QUICK_TAP := false
-
-# Cherish
-CHERISH_MAINTAINER := FrEeRuNnEr4EvEr
-CHERISH_CHIPSET := exynos2100
-CHERISH_BATTERY := 5000mAh
-CHERISH_DISPLAY := 1440x3200
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_NAME := cherish_p3s
