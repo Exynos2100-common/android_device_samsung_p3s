@@ -49,3 +49,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/p3s/proprietary/vendor/firmware/p3_00_generic_xtalk_shape.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/p3_00_generic_xtalk_shape.bin \
     vendor/samsung/p3s/proprietary/vendor/firmware/p3_vl53l5.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/p3_vl53l5.bin \
     vendor/samsung/p3s/proprietary/vendor/firmware/p3_vl53l5.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/p3_vl53l5.bin
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
