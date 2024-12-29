@@ -1,0 +1,4 @@
+ro.infinity.soc=exynos2100
+ro.infinity.battery=5000 mah
+ro.infinity.display=Dynamic AMOLED 2X, 120Hz, HDR10+, 1500 nits (peak)
+ro.infinity.camera=108 mp + 10 mp + 10 mp, 12 mp
