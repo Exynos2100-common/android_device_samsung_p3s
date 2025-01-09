@@ -35,6 +35,9 @@ SOONG_CONFIG_samsungCameraVars_extra_ids := 50,52
 # Display
 TARGET_SCREEN_DENSITY := 560
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_p3s
+
 # Kernel
 TARGET_KERNEL_CONFIG := exynos2100-p3sxxx_defconfig
 
