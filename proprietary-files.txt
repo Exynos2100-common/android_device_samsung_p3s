@@ -192,6 +192,9 @@ vendor/etc/gnss/gps.xml
 vendor/lib/libwrappergps.so
 vendor/lib64/libwrappergps.so
 
+# Hermes
+vendor/bin/hermesd
+
 # MFC Firmware
 vendor/firmware/mfc_fw.bin
 
@@ -273,6 +276,9 @@ vendor/firmware/wifi/nvram.txt_4389_3332
 vendor/firmware/wifi/nvram.txt_ES30_semco_c0
 vendor/firmware/wifi/nvram.txt_ES32_semco_c0
 vendor/firmware/wifi/nvram.txt_ES40_semco_c1
+
+# Widevine
+vendor/lib/libwvhidl.so
 
 # Fingerprint
 vendor/lib/libbauthserver.so
